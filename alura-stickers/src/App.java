@@ -25,18 +25,10 @@ public class App {
 
         // exibir e manipular os dados
         for (Map<String, String> filme : listaDeFilmes) {
-            var title = filme.get("title");
-            var  imDbRating = filme.get("imDbRating");
-            var image = filme.get("image");
-
-            final String ANSI_RESET = "\u001B[0m";
-            final String ANSI_RED_BACKGROUND= "\u001B[41m";
-
-            System.out.println(ANSI_RED_BACKGROUND + title + ANSI_RESET); 
-            System.out.println(image);
-            System.out.println(imDbRating);
+            System.out.println(filme.get("title")); 
+            System.out.println(filme.get("imDbRating"));
+            System.out.println(filme.get("image"));
         }
-      
             
     }
 }
